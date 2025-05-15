@@ -1,3 +1,9 @@
 {
-  "outputDirectory": "build"
+  "version": 2,
+  "public": true,
+  "outputDirectory": ".",
+  "routes": [
+    { "handle": "filesystem" },
+    { "src": "/(.*)", "dest": "/index.html" }
+  ]
 }
