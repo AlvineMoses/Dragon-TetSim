@@ -4,6 +4,7 @@
   "outputDirectory": ".",
   "routes": [
     { "handle": "filesystem" },
+    { "src": "/(.+\\.js\\.map)$", "dest": "/build/$1" },
     { "src": "/(.*)", "dest": "/index.html" }
   ]
 }
